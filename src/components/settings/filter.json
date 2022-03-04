@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_settings_filters",
+  "info": {
+    "displayName": "qualities",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "collection": {
+      "type": "enumeration",
+      "enum": [
+        "autumn",
+        "winter",
+        "spring",
+        "summer"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "green",
+        "orange",
+        "blue"
+      ]
+    },
+    "manufacture": {
+      "type": "enumeration",
+      "enum": [
+        "sega",
+        "lada",
+        "guggi",
+        "abibas"
+      ]
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product",
+    "displayName": "Products",
     "description": ""
   },
   "options": {
@@ -43,9 +43,9 @@
         }
       },
       "type": "text",
-      "required": false
+      "required": true
     },
-    "img": {
+    "picture": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -54,42 +54,9 @@
       ],
       "pluginOptions": {
         "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "products"
-    },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "products"
-    },
-    "filter": {
-      "pluginOptions": {
-        "i18n": {
           "localized": false
         }
-      },
-      "type": "dynamiczone",
-      "components": [
-        "filter.color",
-        "filter.size",
-        "filter.manufacture"
-      ]
-    },
-    "declaration": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
+      }
     },
     "price": {
       "pluginOptions": {
@@ -98,7 +65,50 @@
         }
       },
       "type": "decimal",
-      "required": true
+      "required": true,
+      "min": 0
+    },
+    "qualities": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "settings.filter"
+    },
+    "variants": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
+    },
+    "specification": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "sale": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "min": 0,
+      "max": 99,
+      "default": 0
     }
   }
 }
