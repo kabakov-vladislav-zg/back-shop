@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_filter_manufactures",
+  "info": {
+    "displayName": "manufacture",
+    "icon": "industry"
+  },
+  "options": {},
+  "attributes": {
+    "manufacture": {
+      "type": "enumeration",
+      "enum": [
+        "sega",
+        "lada",
+        "guggi",
+        "abibas"
+      ]
+    }
+  }
+}

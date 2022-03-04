@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_filter_sizes",
+  "info": {
+    "displayName": "size",
+    "icon": "arrows-alt-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "xxl"
+      ],
+      "required": true
+    }
+  }
+}

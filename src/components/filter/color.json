@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_filter_colors",
+  "info": {
+    "displayName": "color",
+    "icon": "fill-drip"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "green",
+        "orange",
+        "blue"
+      ]
+    }
+  }
+}
